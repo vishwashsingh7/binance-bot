@@ -1,0 +1,55 @@
+2025-08-09 12:05:07,544 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:05:07,545 | DEBUG | POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1754721307544&recvWindow=5000&signature=7629ec166b609324bc3bc16971aee8e912eada672c11ef6531100be49e6c77a3
+2025-08-09 12:05:08,182 | DEBUG | Response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-08-09 12:05:08,182 | ERROR | Request failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+Traceback (most recent call last):
+  File "C:\Users\91911\binance-bot\src\basic_bot.py", line 74, in _post_signed
+    resp.raise_for_status()
+  File "C:\Users\91911\binance-bot\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:05:08,205 | ERROR | Error placing order: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:14:05,514 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:14:05,517 | DEBUG | POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&positionSide=BOTH&timestamp=1754721845516&recvWindow=5000&signature=eb6992dc137ceeb5c4eb545933b3e56a4fa1736194e6e26c626f276d5f0420fb
+2025-08-09 12:14:06,126 | DEBUG | Response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-08-09 12:14:06,126 | ERROR | Request failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+Traceback (most recent call last):
+  File "C:\Users\91911\binance-bot\src\basic_bot.py", line 74, in _post_signed
+    resp.raise_for_status()
+  File "C:\Users\91911\binance-bot\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:14:06,130 | ERROR | HTTP error placing order: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:16:19,635 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:16:19,636 | DEBUG | POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&positionSide=BOTH&timestamp=1754721979636&recvWindow=5000&signature=229f74c12d985cdafb1578ed39db5851cc696ab4236913829e89a965e6765b16
+2025-08-09 12:16:19,853 | DEBUG | Response: {"code":-1022,"msg":"Signature for this request is not valid."}
+2025-08-09 12:16:19,853 | ERROR | Request failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+Traceback (most recent call last):
+  File "C:\Users\91911\binance-bot\src\basic_bot.py", line 74, in _post_signed
+    resp.raise_for_status()
+  File "C:\Users\91911\binance-bot\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:16:19,855 | ERROR | HTTP error placing order: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-08-09 12:42:54,595 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:42:54,596 | DEBUG | String to sign: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1754723574596&recvWindow=5000
+2025-08-09 12:42:54,897 | DEBUG | Response: {"orderId":5557197610,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"u22VQdjBtSt59z1Rw8B4Gv","price":"0.00","avgPrice":"0.00","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1754723574909}
+2025-08-09 12:42:54,899 | INFO | Order result: {'orderId': 5557197610, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'u22VQdjBtSt59z1Rw8B4Gv', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1754723574909}
+2025-08-09 12:43:07,344 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:43:07,345 | DEBUG | String to sign: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1754723587345&recvWindow=5000
+2025-08-09 12:43:07,954 | DEBUG | Response: {"orderId":5557198159,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"iLUhJrWTBBCDjnHMYPIKRX","price":"0.00","avgPrice":"0.00","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1754723587872}
+2025-08-09 12:43:07,955 | INFO | Order result: {'orderId': 5557198159, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'iLUhJrWTBBCDjnHMYPIKRX', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1754723587872}
+2025-08-09 12:46:05,879 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:46:05,880 | DEBUG | String to sign: symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.001&price=80000.0&timestamp=1754723765880&recvWindow=5000
+2025-08-09 12:46:06,134 | DEBUG | Response: {"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2025-08-09 12:46:06,134 | ERROR | Binance error: {"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2025-08-09 12:46:06,134 | ERROR | HTTP request failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.001&price=80000.0&timestamp=1754723765880&recvWindow=5000&signature=bf5f84eaafb40acccd93bb076925887be92c9d273a5859649f90c548b746b954
+Traceback (most recent call last):
+  File "C:\Users\91911\binance-bot\src\basic_bot.py", line 82, in _post_signed
+    resp.raise_for_status()
+  File "C:\Users\91911\binance-bot\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.001&price=80000.0&timestamp=1754723765880&recvWindow=5000&signature=bf5f84eaafb40acccd93bb076925887be92c9d273a5859649f90c548b746b954
+2025-08-09 12:46:06,172 | ERROR | Error placing order: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.001&price=80000.0&timestamp=1754723765880&recvWindow=5000&signature=bf5f84eaafb40acccd93bb076925887be92c9d273a5859649f90c548b746b954
+2025-08-09 12:49:53,761 | INFO | Bot initialized with base_url=https://testnet.binancefuture.com
+2025-08-09 12:49:54,084 | ERROR | Error placing order: Order notional 80.00 is below minNotional 100.0
